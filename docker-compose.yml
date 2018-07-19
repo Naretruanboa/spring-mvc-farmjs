@@ -12,7 +12,7 @@ services:
     environment:
      - DATABASE_HOST=db
     volumes:
-     - /pedigree/target/PedigreeFarmJS.war:/usr/local/tomcabt/webapps/
+     - /pedigree/target/PedigreeFarmJS:/usr/local/tomcabt/webapps/PedigreeFarmJS
     #  - ./pedigree/target/PedigreeFarmJS/:/usr/local/tomcat/webapps/PedigreeFarmJS
     networks:
       - default
