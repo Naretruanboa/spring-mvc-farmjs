@@ -4,7 +4,7 @@ services:
     build: pedigree/.
     # image: naretruanboa/webfarmjs:0.0.2
     restart: always
-    # command: catalina.sh run
+    command: catalina.sh run
     ports:
      - "8080:8080"
     depends_on:
@@ -12,8 +12,8 @@ services:
     environment:
      - DATABASE_HOST=db
     volumes:
-     - ./pedigree/target/PedigreeFarmJS.war:/usr/local/tomcat/webapps/
-     - ./pedigree/tomcat-users.xml:/usr/local/tomcat/conf/
+     - /pedigree/target/PedigreeFarmJS.war:/usr/local/tomcbat/webapps/
+    #  - ./pedigree/target/PedigreeFarmJS/:/usr/local/tomcat/webapps/PedigreeFarmJS
     networks:
       - default
   adminer:
@@ -30,7 +30,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 123456
     volumes:
-      - ./pedigree_db:/var/lib/mysql/
+      - /pedigree_db:/var/lib/mysql/
     networks:
       - default
   
