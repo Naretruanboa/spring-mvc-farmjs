@@ -12,7 +12,7 @@ services:
     environment:
      - DATABASE_HOST=db
     volumes:
-     - /pedigree/target/PedigreeFarmJS.war:/usr/local/tomcbat/webapps/
+     - ./pedigree/target/PedigreeFarmJS.war:/usr/local/tomcbat/webapps/
     #  - ./pedigree/target/PedigreeFarmJS/:/usr/local/tomcat/webapps/PedigreeFarmJS
     networks:
       - default
@@ -30,7 +30,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 123456
     volumes:
-      - /pedigree_db:/var/lib/mysql/
+      - ./pedigree_db:/var/lib/mysql/
     networks:
       - default
   
