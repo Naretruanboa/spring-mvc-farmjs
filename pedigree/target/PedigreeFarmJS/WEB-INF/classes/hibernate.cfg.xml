@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE hibernate-configuration SYSTEM "classpath://org/hibernate/hibernate-configuration-3.0.dtd"> -->
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="PedigreeJS">
+        <!-- <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">jsp2016</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/PedigreeJS</property>
+        <property name="hibernate.connection.username">jspuser</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property> -->
+        
+    <!--<mapping class="PedigreeJS.spring.model.Alert"></mapping>-->
+    <!--<mapping class="PedigreeJS.spring.model.AlertStorehouse"/>-->
+    
+	    <mapping class="PedigreeJS.spring.model.Member"/>
+	    <mapping class="PedigreeJS.spring.model.Privilege"/>
+	    <mapping class="PedigreeJS.spring.model.Pedigree"/>
+	    <mapping class="PedigreeJS.spring.model.Sex"/>
+	    <mapping class="PedigreeJS.spring.model.Color"/>
+	    <mapping class="PedigreeJS.spring.model.FCow"/>
+	    <mapping class="PedigreeJS.spring.model.CheckType"/> 
+   
+    <!---->
+    </session-factory> 
+    
+    
+</hibernate-configuration>
