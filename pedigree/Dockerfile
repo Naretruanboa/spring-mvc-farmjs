@@ -5,6 +5,4 @@ ADD ./target/PedigreeFarmJS.war /usr/local/tomcat/webapps/
 ADD tomcat-users.xml /usr/local/tomcat/conf/
 # ADD ./src/PedigreeFarmJS.war /usr/local/tomcat/webapps/PedigreeFarmJS.war
 EXPOSE 8080
-# RUN ["apt-get", "update"]
-# RUN ["apt-get", "install", "-y", "nano"]
 CMD ["catalina.sh", "run"]
